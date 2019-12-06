@@ -20,14 +20,6 @@ import {
 import sidePic from './images/sidePic.png';
 
 class Header extends React.Component{
-  handleClick(){
-    //let goTo = document.getElementById(id)
-    //console.log("test");
-    /*window.scrollTo({
-      top: goTo,
-      behavoir: 'smooth'
-    }); */
-  }
   state = {
     collapsed: false
   };
@@ -114,7 +106,7 @@ class Header extends React.Component{
             <MDBRow>
               <MDBCol
                 md="6"
-                className="text-dark text-center text-md-left mb-5 mt-5 mt-md-0"
+                className="text-dark text-center text-md-left mb-lg-5 mt-lg-5"
               >
                 <MDBAnimation type="fadeInLeft" delay=".3s">
                   <h1 className="h1-responsive font-weight-bold mt-sm-5">
@@ -134,7 +126,7 @@ class Header extends React.Component{
                 </MDBAnimation>
               </MDBCol>
 
-              <MDBCol md="6" xl="5" className="align-self-center mb-5">
+              <MDBCol md="6" xl="5" className="align-self-center mb-lg-5 mt-lg-5">
                 <MDBAnimation type="fadeInRight" delay=".3s">
                   <img
                     //src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png"
@@ -148,22 +140,6 @@ class Header extends React.Component{
           </MDBContainer>
         </MDBMask>
       </MDBView>
-
-      <MDBContainer id="nextPage">
-        <MDBRow className="py-5">
-          <MDBCol md="12" className="text-center">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
     </div>
     )
   }
